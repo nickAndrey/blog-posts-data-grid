@@ -7,9 +7,9 @@ type Props = {
 };
 
 const TableColumn = ({ children, className }: Props) => {
-  const defaultClassName = 'border border-2 border-yellow-400 px-4 py-2';
+  const defaultClasses = 'border border-2 border-yellow-400 px-4 py-2';
 
-  const mergedClasses = twMerge(defaultClassName, className ?? '');
+  const mergedClasses = twMerge(defaultClasses, className ?? '');
 
   return <td className={mergedClasses}>{children}</td>;
 };

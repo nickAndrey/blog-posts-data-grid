@@ -22,7 +22,7 @@ const Table = ({ title, headers, children }: Props) => {
               <thead>
                 <tr>
                   {headers.map(({ id, title }) => (
-                    <TableColumn className='bg-emerald-400' key={id}>
+                    <TableColumn className='bg-emerald-500' key={id}>
                       {title}
                     </TableColumn>
                   ))}

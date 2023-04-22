@@ -46,6 +46,7 @@ const Home = ({ posts }: Props) => {
           <td className='w-[100%]' colSpan={3}>
             <div className='flex gap-5 justify-end py-2 px-2'>
               <button
+                type='button'
                 className='rounded-none bg-slate-400 px-5 py-2 text-white hover:bg-slate-700 disabled:opacity-50'
                 onClick={goPrevPage}
                 disabled={currentPage === 1}
@@ -53,6 +54,7 @@ const Home = ({ posts }: Props) => {
                 prev
               </button>
               <button
+                type='button'
                 className='rounded-none bg-slate-400 px-5 py-2 text-white hover:bg-slate-700 disabled:opacity-50'
                 onClick={goNextPage}
                 disabled={currentPage === totalPages}
