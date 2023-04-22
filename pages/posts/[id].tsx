@@ -19,10 +19,10 @@ const PostDetail = ({ post }: Props) => {
     <>
       <Table title='Post Detail' headers={tableHeaders}>
         <tr>
-          <TableColumn>{post.id}</TableColumn>
-          <TableColumn>{post.title}</TableColumn>
-          <TableColumn>
-            <p className='max-w-[40%]'>{post.body}</p>
+          <TableColumn className='w-1/12'>{post.id}</TableColumn>
+          <TableColumn className='w-5/12'>{post.title}</TableColumn>
+          <TableColumn className='w-6/12'>
+            <p className='max-w-[100%]'>{post.body}</p>
           </TableColumn>
         </tr>
       </Table>
